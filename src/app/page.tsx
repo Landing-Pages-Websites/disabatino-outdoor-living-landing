@@ -219,7 +219,7 @@ export default function OutdoorLivingPage() {
   const [headerScrolled, setHeaderScrolled] = useState(false);
 
   useTracking({
-    siteKey: "PENDING",
+    siteKey: "sk_morkk4an_zh29pn4ijnr",
     pixelId: "954247080070263",
   });
 

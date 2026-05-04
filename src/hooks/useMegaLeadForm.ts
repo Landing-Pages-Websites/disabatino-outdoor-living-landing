@@ -4,7 +4,7 @@ import { useEffect, useCallback, useRef } from "react";
 
 const CONFIG = {
   CUSTOMER_ID: "1094e524-dae7-4bef-8978-5ef80d881ee6",
-  SITE_ID: "PENDING", // Updated after Mega Admin site registration
+  SITE_ID: "894efb1c-c8c5-4fab-a4c5-bc78fcb402d6",
   SOURCE_PROVIDER: "customer-landing-disabatino-outdoor-living",
   ENDPOINT: "https://analytics.gomega.ai/submission/submit",
 };

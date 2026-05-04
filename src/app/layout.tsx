@@ -34,7 +34,7 @@ export default function RootLayout({
         {/* MegaTag — site_key injected after site registration */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.MEGA_TAG_CONFIG={siteKey:"PENDING",gtmId:"",pixelId:"954247080070263"};`,
+            __html: `window.MEGA_TAG_CONFIG={siteKey:"sk_morkk4an_zh29pn4ijnr",gtmId:"",pixelId:"954247080070263"};`,
           }}
         />
         <script src="https://cdn.gomega.ai/scripts/optimizer.min.js" async />
