@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  /* DiSabatino Brand Colors */
+  --color-brand-green: #2D4A2D;
+  --color-brand-green-dark: #1E3320;
+  --color-brand-green-light: #3D5F3D;
+  --color-brand-gold: #B8860B;
+  --color-brand-gold-light: #D4A017;
+  --color-brand-cream: #F8F5F0;
+  --color-brand-cream-dark: #EDE9E2;
+  --color-charcoal: #2C2C2C;
+  --color-charcoal-light: #4A4A4A;
+  --color-warm-white: #FAFAF8;
+
+  --font-display: "Georgia", "Times New Roman", serif;
+  --font-body: "Inter", -apple-system, "system-ui", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Sticky header scroll shadow */
+.header-scrolled {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+}
