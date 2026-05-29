@@ -185,6 +185,19 @@ function LeadForm({
         </select>
       </div>
 
+      <div>
+        <label htmlFor={`${id}-project-type`} className={`block text-sm font-medium mb-1 ${labelColor}`}>
+          Type of Project
+        </label>
+        <textarea
+          id={`${id}-project-type`}
+          name="project_type"
+          rows={3}
+          placeholder="Tell us about your outdoor living project — patio, pergola, outdoor kitchen, landscape design, scope, materials, timing, anything else you'd like us to know."
+          className={`w-full rounded-lg border px-4 py-3 text-sm outline-none transition focus:ring-2 resize-none ${inputBg}`}
+        />
+      </div>
+
       <button
         type="submit"
         disabled={isSubmitting}
@@ -240,6 +253,7 @@ export default function OutdoorLivingPage() {
         email: fd.get("email"),
         phone: fd.get("phone"),
         budget: fd.get("budget"),
+        project_type: fd.get("project_type"),
       });
       setIsSuccess(true);
       if (typeof window !== "undefined") {
